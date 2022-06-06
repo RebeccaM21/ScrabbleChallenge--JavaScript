@@ -1,18 +1,13 @@
 
 class Scrabble {
     constructor(word) {
-        // Check if the word that was passed in doesn't contain any numbers
-        // Else convert to upper case 
       if (typeof word === 'string') { 
         this.word = word.toUpperCase;
       } else { 
         console.log ('You must input a word')
         }
       }
-    }
-
-    // Some data structure to hold the score value according to each letter
-
+}
   switch (letter) {
     case 'A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T':
       return 1
@@ -32,16 +27,11 @@ class Scrabble {
         return 0
   }
     
-function CheckScore(letter) 
+let score = 
+    letter.reduce ((previousValue, currentValue) => { 
+        return previousValue + currentValue})
     
-    // Function to check score 
-      
-        // Iterate through each letter and add up the score 
-
-
-        // return the total score
-
 let game = new Scrabble('game');
-console.log(game.CheckScore());
+console.log(game.score());
 
 module.exports = Scrabble
