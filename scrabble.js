@@ -26,12 +26,5 @@ class Scrabble {
     default:
         return 0
   }
-    
-let score = 
-    letter.reduce ((previousValue, currentValue) => { 
-        return previousValue + currentValue})
-    
-let game = new Scrabble('game');
-console.log(game.score());
 
 module.exports = Scrabble
