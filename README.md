@@ -118,12 +118,10 @@ $ ./node_modules/jasmine/bin/jasmine.js
    ```sh
    npm install
    ```
-   
-### Running & Testing
-
-Clone repository 
-Do "npm i"
-To run the tests use "npm test"
+3. Run Tests
+   ```sh
+   npm test
+   ```
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
